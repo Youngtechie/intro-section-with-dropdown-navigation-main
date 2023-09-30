@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        position: absolute;
+        bottom: 10px;
+        font-size: 12px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header class="header1">
+        <img src="./images/logo.svg" alt="logo" />
+        <img src="./images/icon-menu.svg" alt="icon-menu" onclick="showNav()" />
+        <div class="nav2">
+          <div class="navF">
+            <div class="con1">
+              <button class="btnN1 btn1" onclick="ChangeMore1show('div')">
+                <span>Features</span>
+                <img src="./images/icon-arrow-down.svg" alt="icon-arrow-down" />
+              </button>
+              <div class="more1">
+                <button>
+                  <img src="./images/icon-todo.svg" alt="icon-todo" /><span
+                    >Todo List</span
+                  >
+                </button>
+                <button>
+                  <img
+                    src="./images/icon-calendar.svg"
+                    alt="icon-calendar"
+                  /><span>Calendar</span>
+                </button>
+                <button>
+                  <img
+                    src="./images/icon-reminders.svg"
+                    alt="icon-reminders"
+                  /><span>Reminders</span>
+                </button>
+                <button>
+                  <img
+                    src="./images/icon-planning.svg"
+                    alt="icon-planning"
+                  /><span>Planning</span>
+                </button>
+              </div>
+            </div>
+            <div class="con1">
+              <button class="btnN2 btn1" onclick="ChangeMore2show('div')">
+                <span>Company</span>
+                <img src="./images/icon-arrow-down.svg" alt="icon-arrow-down" />
+              </button>
+              <div class="more2">
+                <button>History</button>
+                <button>Our Team</button>
+                <button>Blog</button>
+              </div>
+            </div>
+            <button class="btn1"><span>Careers</span></button>
+            <button class="btn1"><span>About</span></button>
+          </div>
+
+          <div class="navS">
+            <button>Login</button>
+            <button>Register</button>
+          </div>
+        </div>
+      </header>
+
+      <nav class="nav1">
+        <img
+          src="./images/icon-close-menu.svg"
+          alt="icon-close-menu"
+          width="25"
+          class="icon-close"
+          onclick="showNav()"
+        />
+        <div class="navF">
+          <button class="btnN1" onclick="ChangeMore1show('nav')">
+            <span>Features</span>
+            <img src="./images/icon-arrow-down.svg" alt="icon-arrow-down" />
+          </button>
+          <div class="more1">
+            <button>
+              <img src="./images/icon-todo.svg" alt="icon-todo" /><span
+                >Todo List</span
+              >
+            </button>
+            <button>
+              <img src="./images/icon-calendar.svg" alt="icon-calendar" /><span
+                >Calendar</span
+              >
+            </button>
+            <button>
+              <img
+                src="./images/icon-reminders.svg"
+                alt="icon-reminders"
+              /><span>Reminders</span>
+            </button>
+            <button>
+              <img src="./images/icon-planning.svg" alt="icon-planning" /><span
+                >Planning</span
+              >
+            </button>
+          </div>
+          <button class="btnN2" onclick="ChangeMore2show('nav')">
+            <span>Company</span>
+            <img src="./images/icon-arrow-down.svg" alt="icon-arrow-down" />
+          </button>
+          <div class="more2">
+            <button>History</button>
+            <button>Our Team</button>
+            <button>Blog</button>
+          </div>
+          <button><span>Careers</span></button>
+          <button><span>About</span></button>
+        </div>
+
+        <div class="navS">
+          <button>Login</button>
+          <button>Register</button>
+        </div>
+      </nav>
+
+      <div class="imgBack1">
+        <img src="./images/image-hero-mobile.png" alt="image-hero" />
+      </div>
+
+      <div class="body">
+
+        <div class="imgBack2">
+          <img src="./images/image-hero-desktop.png" alt="image-hero" />
+        </div>
+
+        <div class="section2">
+          <h2>Make remote work</h2>
+  
+          <p>
+            Get your team in sync, no matter your location. Streamline processes,
+            create team rituals, and watch productivity soar.
+          </p>
+  
+          <button class="learnBtn">Learn more</button>
+  
+          <footer>
+            <img
+              src="./images/client-databiz.svg"
+              alt="client-databiz"
+              width="70px"
+            />
+            <img
+              src="./images/client-audiophile.svg"
+              alt="client-audiophile"
+              width="50px"
+            />
+            <img src="./images/client-meet.svg" alt="client-meet" width="60px" />
+            <img
+              src="./images/client-maker.svg"
+              alt="client-maker"
+              width="60px"
+            />
+          </footer>
+        </div>
+
+      </div>
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Youngtechie</a>.
+      </div>
+
+      <div class="overlay"></div>
+    </main>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
